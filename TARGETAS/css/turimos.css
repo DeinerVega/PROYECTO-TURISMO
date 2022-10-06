@@ -1,0 +1,263 @@
+/* -------------------- Reset CSS -------------------- */
+/*CSS SEA IGUAL EN TODOS LOS NAVEGADORES*/
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+html { font-size: 16px; }
+/* -------------------- Utopia Fluid Responsive Design -------------------- */
+/* @link https://utopia.fyi/type/calculator?c=320,17,1.2,1500,20,1.333,8,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
+:root {
+    --step--1: clamp(0.89rem, calc(0.87rem + 0.07vw), 0.94rem);
+    --step-0: clamp(1.06rem, calc(1.01rem + 0.25vw), 1.25rem);
+    --step-1: clamp(1.28rem, calc(1.17rem + 0.53vw), 1.67rem);
+    --step-2: clamp(1.53rem, calc(1.34rem + 0.94vw), 2.22rem);
+    --step-3: clamp(1.84rem, calc(1.53rem + 1.52vw), 2.96rem);
+    --step-4: clamp(2.20rem, calc(1.73rem + 2.36vw), 3.95rem);
+    --step-5: clamp(2.64rem, calc(1.93rem + 3.55vw), 5.26rem);
+    --step-6: clamp(3.17rem, calc(2.13rem + 5.21vw), 7.01rem);
+    --step-7: clamp(3.81rem, calc(2.30rem + 7.51vw), 9.35rem);
+    --step-8: clamp(4.57rem, calc(2.43rem + 10.70vw), 12.46rem);
+}
+
+/* --------------------imagen Responsive -------------------- */
+/* https://www.youtube.com/watch?v=udGrXWeJp1Y&t=4090s */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+    margin-right: auto !important;
+    object-fit: cover !important;
+}
+
+
+/* -------------------- Imagen a Tamaño completo Pantalla -------------------- */
+.hero_image {
+    
+    display: block;
+    width: 100%;
+
+    background-image: url('../img/hero_img.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-origin: border-box;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* -------------------- menu -------------------- */
+
+#logo1 {
+    
+    width: 50px;
+    height: 50px;
+    justify-content: left;
+}
+
+form > input{
+    margin: 10px;
+}
+
+
+/* -------------------- formulario de fechas -------------------- */
+
+.consulta1{
+    font-size: var(--step-1);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.consultas {
+    margin-bottom: 20px;
+}
+
+/* -------------------- Galeria de Imagenes (Masonry Layout) Usando Flexbox -------------------- */
+
+.paisaje {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* CSS-Tricks (Trucos CSS)
+https://css-tricks.com/adaptive-photo-layout-with-flexbox/#aa-demo */
+
+.flex_container_gallery {
+    width: 100%;
+    list-style-type: none;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_container_gallery li {
+    height: 40vh;
+    flex-grow: 1;
+}
+
+.flex_container_gallery img {
+    max-width: none;
+    
+    max-height: 100%;
+
+    vertical-align: bottom;
+}
+
+/* https://css-tricks.com/adaptive-photo-layout-with-flexbox/#aa-last-row-stretchiness */
+.flex_container_gallery .empty_item { flex-grow: 10; }
+
+/* -------------------- Texto a 2 columnas -------------------- */
+
+.h2_turismo { 
+    text-align: center; 
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.article_turismo {
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 5px; /* separar el texto */
+    column-gap: 5px;
+}
+
+.article_turismo p {
+    font-size: var(--step--1);
+    flex-basis: 100%;
+}
+
+/* -------------------- <footer> pie de pagina -------------------- */
+
+footer {
+    width: 95vw;
+    padding: 2%;
+
+    /* centrar horizontalmente */
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 0.625rem;
+
+    border-radius: 0.9375rem;
+    box-shadow: inset 0px 0px 8px -2px #fff;
+    background-color: rgb(29, 33, 36);
+}
+
+.footer_lista {
+    list-style-type: none;
+
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 15px;
+}
+
+.footer_enlace {
+    color: #fff;
+    font-size: var(--step-0);
+    text-decoration-line: none;
+
+    flex-grow: 1;
+}
+
+.footer_lista li {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center; /* centrar verticalmente el texto del <footer> Pedidos a domicilio, Pedidos por telefono... */
+    flex: 0 0 100%;
+    column-gap: 0.625rem;
+}
+
+.icono_lista {
+    display: inline-block;
+    width: 1.875rem;
+}
+
+/* --------------------
+MEDIA QUERIES
+-------------------- */
+
+/* 
+nota 
+viewport = pantalla
+
+1px = 16rem
+*/
+
+/* -------------------- Galeria de Imagenes (Masonry Layout) Usando Flexbox -------------------- */
+
+/* https://css-tricks.com/adaptive-photo-layout-with-flexbox/#aa-portrait */
+@media screen and (max-aspect-ratio: 1/1) { /* viewport con las mismas medidas de anchoXalto */
+    .flex_container_gallery li {
+        height: 30vh;
+    }
+}
+
+/* https://css-tricks.com/adaptive-photo-layout-with-flexbox/#aa-short-screens */
+@media screen and (max-height: 30em) { /* alto viewport <= 480px = 30em */
+    .flex_container_gallery li { height: 80vh; }
+
+    .flex_container_gallery img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .flex_container_gallery .empty_item { display: none; }
+}
+
+/* https://css-tricks.com/adaptive-photo-layout-with-flexbox/#aa-smaller-screens-portrait */
+@media screen and (max-aspect-ratio: 1/1) and (max-width: 30em) { /* (anchoXalto viewport es igual) AND (ancho viewport <= 480px = 30em) */
+    .flex_container_gallery { flex-direction: row; }
+
+    .flex_container_gallery li {
+        width: 100%;
+        height: auto;
+    }
+
+    .flex_container_gallery img {
+        display : block;
+        width: 100%;
+        max-height: 75vh;
+        min-width: 0;
+    }
+}
+
+/* -------------------- Texto a 2 columnas -------------------- */
+
+@media screen and (min-width: 30rem) { /* ancho viewport >= 480px = 30em  */
+    .article_turismo p {
+        /* flex-basis: es el ancho elementos hijos (parrafo)
+        (100% ancho pantalla) / (2 columnas) = 50%
+        50% - column-gap: 5px; */
+        flex-basis: calc(50% - 5px); 
+    }
+}
+
+/* -------------------- <footer> pie de pagina -------------------- */
+@media screen and (min-width: 30em) {
+    .footer_lista li { flex: 0 0 50%; } /* ancho viewport >= 480px = 30em hasta infinito */
+}
+
