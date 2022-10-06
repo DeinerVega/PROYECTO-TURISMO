@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/turimos.css" />
+        <!-- Llamar css -->
+        <link rel="icon" href="./img/logo.png" />
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+       <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+       <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+
+        
+
+
+        <title>TURISMO</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="container-fluid">
+                <img src="./img/logo1.jpg" alt="epicStore" id="logo1" />
+                <a class="navbar-brand" href="http://127.0.0.1:5500/index.html">Esto es Colombia</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="https://www.colombia.co/fr/la-colombie/histoire-cest-ca-la-colombie/"
+                                >Historia</a
+                            >
+                            <a class="nav-link active" aria-current="page" href="https://www.colombia.co/en/colombia-culture/art/"
+                                >Cultura</a
+                            >
+                            <a class="nav-link active" aria-current="page" href="https://www.colombia.co/en/colombia-country/famous-people-from-colombia/athletes/"
+                                >Talento</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="titulares hero_image">
+            <!-- encabezado -->
+
+            <div class="consulta1">
+
+                <h1 class="text-danger">Consultas</h1>
+                <!-- Titulo Principal -->
+                <form>
+
+                  
+                    <input class="form-control" type="text" placeholder="Salida" />
+                    <input class="form-control" type="text" placeholder="Destino" />
+                    <input type="date" />
+                    <input type="date" />
+                    <input class="form-control" type="text" placeholder="Cantidad Pasajero" />
+                    <button id="Buscar1" type="button" class="btn btn-warning">Buscar</button>
+                </form>
+            </div>
+        </header>
+
+        
+        
+          
+
+        <div class="container">
+            <!-- Principal -->
+
+            
+                  
+                
+    
+            
+
+            <section>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal-sm">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal-md">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal-lg">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal-xl">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+
+                <h2 class="paisaje">
+                    <!-- Subtitulo nivel 2 -->
+                    <span>PAISAJES</span>
+                    <!-- Resaltar Texto  -->
+                </h2>
+
+                
+
+                <ul class="flex_container_gallery">
+            
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img/guatape.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Guatape - Antioquia</h5>
+                              <p class="card-text">Guatapé es un municipio turístico de los Andes al noroeste de Colombia y al este de Medellín. </p>
+                              <a href="https://www.municipiodeguatape.gov.co/" class="btn btn-primary">Ir</a>
+                            </div>
+                          </div>
+                      
+                          <div class="card" style="width: 18rem;">
+                            <img src="./img/playa.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Ensenada de Utria</h5>
+                              <p class="card-text">El Parque Nacional Natural Utría es considerado como único en su tipo por contener gran variedad de ecosistemas, que van desde el marino hasta el selvático.</p>
+                              <a href="https://www.almejal.com.co/parque-nacional-ensenada-de-utria/" class="btn btn-primary">Ir</a>
+                            </div>
+                          </div>
+                 
+
+                          <div class="card" style="width: 18rem;">
+                            <img src="./img/selva.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Valle de Cocora en Colombia</h5>
+                              <p class="card-text">El Valle del Cocora situado en la cordillera central de los Andes colombianos en pleno eje cafetero es uno de los sitios más especiales de Colombia.</p>
+                              <a href="http://www.colparques.net/COCORA#aceptar" class="btn btn-primary">Ir</a>
+                            </div>
+                          </div>
+                      </ul>
+
+
+                   <!-- DATATABLES -->
+                    <script>$(document).ready(function () {
+                    $('#example').DataTable();
+                    });</script>
+                
+
+                  <table id="example" class="cell-border" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Age</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>61</td>
+                            <td>2011-04-25</td>
+                            <td>$320,800</td>
+                        </tr>
+                        <tr>
+                            <td>Garrett Winters</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>63</td>
+                            <td>2011-07-25</td>
+                            <td>$170,750</td>
+                        </tr>
+                        <tr>
+                            <td>Ashton Cox</td>
+                            <td>Junior Technical Author</td>
+                            <td>San Francisco</td>
+                            <td>66</td>
+                            <td>2009-01-12</td>
+                            <td>$86,000</td>
+                        </tr>
+                        <tr>
+                            <td>Cedric Kelly</td>
+                            <td>Senior Javascript Developer</td>
+                            <td>Edinburgh</td>
+                            <td>22</td>
+                            <td>2012-03-29</td>
+                            <td>$433,060</td>
+                        </tr>
+                        <tr>
+                            <td>Airi Satou</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>33</td>
+                            <td>2008-11-28</td>
+                            <td>$162,700</td>
+                        </tr>
+                        <tr>
+                            <td>Brielle Williamson</td>
+                            <td>Integration Specialist</td>
+                            <td>New York</td>
+                            <td>61</td>
+                            <td>2012-12-02</td>
+                            <td>$372,000</td>
+                        </tr>
+                        <tr>
+                            <td>Herrod Chandler</td>
+                            <td>Sales Assistant</td>
+                            <td>San Francisco</td>
+                            <td>59</td>
+                            <td>2012-08-06</td>
+                            <td>$137,500</td>
+                        </tr>
+                        <tr>
+                            <td>Rhona Davidson</td>
+                            <td>Integration Specialist</td>
+                            <td>Tokyo</td>
+                            <td>55</td>
+                            <td>2010-10-14</td>
+                            <td>$327,900</td>
+                        </tr>
+                        <tr>
+                            <td>Colleen Hurst</td>
+                            <td>Javascript Developer</td>
+                            <td>San Francisco</td>
+                            <td>39</td>
+                            <td>2009-09-15</td>
+                            <td>$205,500</td>
+                        </tr>
+                        <tr>
+                            <td>Sonya Frost</td>
+                            <td>Software Engineer</td>
+                            <td>Edinburgh</td>
+                            <td>23</td>
+                            <td>2008-12-13</td>
+                            <td>$103,600</td>
+                        </tr>
+                        <tr>
+                            <td>Jena Gaines</td>
+                            <td>Office Manager</td>
+                            <td>London</td>
+                            <td>30</td>
+                            <td>2008-12-19</td>
+                            <td>$90,560</td>
+                        </tr>
+                        <tr>
+                            <td>Quinn Flynn</td>
+                            <td>Support Lead</td>
+                            <td>Edinburgh</td>
+                            <td>22</td>
+                            <td>2013-03-03</td>
+                            <td>$342,000</td>
+                        </tr>
+                        <tr>
+                            <td>Charde Marshall</td>
+                            <td>Regional Director</td>
+                            <td>San Francisco</td>
+                            <td>36</td>
+                            <td>2008-10-16</td>
+                            <td>$470,600</td>
+                        </tr>
+                        <tr>
+                            <td>Haley Kennedy</td>
+                            <td>Senior Marketing Designer</td>
+                            <td>London</td>
+                            <td>43</td>
+                            <td>2012-12-18</td>
+                            <td>$313,500</td>
+                        </tr>
+                        <tr>
+                            <td>Tatyana Fitzpatrick</td>
+                            <td>Regional Director</td>
+                            <td>London</td>
+                            <td>19</td>
+                            <td>2010-03-17</td>
+                            <td>$385,750</td>
+                        </tr>
+                        <tr>
+                            <td>Michael Silva</td>
+                            <td>Marketing Designer</td>
+                            <td>London</td>
+                            <td>66</td>
+                            <td>2012-11-27</td>
+                            <td>$198,500</td>
+                        </tr>
+                        <tr>
+                            <td>Paul Byrd</td>
+                            <td>Chief Financial Officer (CFO)</td>
+                            <td>New York</td>
+                            <td>64</td>
+                            <td>2010-06-09</td>
+                            <td>$725,000</td>
+                        </tr>
+                        <tr>
+                            <td>Gloria Little</td>
+                            <td>Systems Administrator</td>
+                            <td>New York</td>
+                            <td>59</td>
+                            <td>2009-04-10</td>
+                            <td>$237,500</td>
+                        </tr>
+                        <tr>
+                            <td>Bradley Greer</td>
+                            <td>Software Engineer</td>
+                            <td>London</td>
+                            <td>41</td>
+                            <td>2012-10-13</td>
+                            <td>$132,000</td>
+                        </tr>
+                        <tr>
+                            <td>Dai Rios</td>
+                            <td>Personnel Lead</td>
+                            <td>Edinburgh</td>
+                            <td>35</td>
+                            <td>2012-09-26</td>
+                            <td>$217,500</td>
+                        </tr>
+                        <tr>
+                            <td>Jenette Caldwell</td>
+                            <td>Development Lead</td>
+                            <td>New York</td>
+                            <td>30</td>
+                            <td>2011-09-03</td>
+                            <td>$345,000</td>
+                        </tr>
+                        <tr>
+                            <td>Yuri Berry</td>
+                            <td>Chief Marketing Officer (CMO)</td>
+                            <td>New York</td>
+                            <td>40</td>
+                            <td>2009-06-25</td>
+                            <td>$675,000</td>
+                        </tr>
+                        <tr>
+                            <td>Caesar Vance</td>
+                            <td>Pre-Sales Support</td>
+                            <td>New York</td>
+                            <td>21</td>
+                            <td>2011-12-12</td>
+                            <td>$106,450</td>
+                        </tr>
+                        <tr>
+                            <td>Doris Wilder</td>
+                            <td>Sales Assistant</td>
+                            <td>Sydney</td>
+                            <td>23</td>
+                            <td>2010-09-20</td>
+                            <td>$85,600</td>
+                        </tr>
+                        <tr>
+                            <td>Angelica Ramos</td>
+                            <td>Chief Executive Officer (CEO)</td>
+                            <td>London</td>
+                            <td>47</td>
+                            <td>2009-10-09</td>
+                            <td>$1,200,000</td>
+                        </tr>
+                        <tr>
+                            <td>Gavin Joyce</td>
+                            <td>Developer</td>
+                            <td>Edinburgh</td>
+                            <td>42</td>
+                            <td>2010-12-22</td>
+                            <td>$92,575</td>
+                        </tr>
+                        <tr>
+                            <td>Jennifer Chang</td>
+                            <td>Regional Director</td>
+                            <td>Singapore</td>
+                            <td>28</td>
+                            <td>2010-11-14</td>
+                            <td>$357,650</td>
+                        </tr>
+                        <tr>
+                            <td>Brenden Wagner</td>
+                            <td>Software Engineer</td>
+                            <td>San Francisco</td>
+                            <td>28</td>
+                            <td>2011-06-07</td>
+                            <td>$206,850</td>
+                        </tr>
+                        <tr>
+                            <td>Fiona Green</td>
+                            <td>Chief Operating Officer (COO)</td>
+                            <td>San Francisco</td>
+                            <td>48</td>
+                            <td>2010-03-11</td>
+                            <td>$850,000</td>
+                        </tr>
+                        <tr>
+                            <td>Shou Itou</td>
+                            <td>Regional Marketing</td>
+                            <td>Tokyo</td>
+                            <td>20</td>
+                            <td>2011-08-14</td>
+                            <td>$163,000</td>
+                        </tr>
+                        <tr>
+                            <td>Michelle House</td>
+                            <td>Integration Specialist</td>
+                            <td>Sydney</td>
+                            <td>37</td>
+                            <td>2011-06-02</td>
+                            <td>$95,400</td>
+                        </tr>
+                        <tr>
+                            <td>Suki Burks</td>
+                            <td>Developer</td>
+                            <td>London</td>
+                            <td>53</td>
+                            <td>2009-10-22</td>
+                            <td>$114,500</td>
+                        </tr>
+                        <tr>
+                            <td>Prescott Bartlett</td>
+                            <td>Technical Author</td>
+                            <td>London</td>
+                            <td>27</td>
+                            <td>2011-05-07</td>
+                            <td>$145,000</td>
+                        </tr>
+                        <tr>
+                            <td>Gavin Cortez</td>
+                            <td>Team Leader</td>
+                            <td>San Francisco</td>
+                            <td>22</td>
+                            <td>2008-10-26</td>
+                            <td>$235,500</td>
+                        </tr>
+                        <tr>
+                            <td>Martena Mccray</td>
+                            <td>Post-Sales support</td>
+                            <td>Edinburgh</td>
+                            <td>46</td>
+                            <td>2011-03-09</td>
+                            <td>$324,050</td>
+                        </tr>
+                        <tr>
+                            <td>Unity Butler</td>
+                            <td>Marketing Designer</td>
+                            <td>San Francisco</td>
+                            <td>47</td>
+                            <td>2009-12-09</td>
+                            <td>$85,675</td>
+                        </tr>
+                        <tr>
+                            <td>Howard Hatfield</td>
+                            <td>Office Manager</td>
+                            <td>San Francisco</td>
+                            <td>51</td>
+                            <td>2008-12-16</td>
+                            <td>$164,500</td>
+                        </tr>
+                        <tr>
+                            <td>Hope Fuentes</td>
+                            <td>Secretary</td>
+                            <td>San Francisco</td>
+                            <td>41</td>
+                            <td>2010-02-12</td>
+                            <td>$109,850</td>
+                        </tr>
+                        <tr>
+                            <td>Vivian Harrell</td>
+                            <td>Financial Controller</td>
+                            <td>San Francisco</td>
+                            <td>62</td>
+                            <td>2009-02-14</td>
+                            <td>$452,500</td>
+                        </tr>
+                        <tr>
+                            <td>Timothy Mooney</td>
+                            <td>Office Manager</td>
+                            <td>London</td>
+                            <td>37</td>
+                            <td>2008-12-11</td>
+                            <td>$136,200</td>
+                        </tr>
+                        <tr>
+                            <td>Jackson Bradshaw</td>
+                            <td>Director</td>
+                            <td>New York</td>
+                            <td>65</td>
+                            <td>2008-09-26</td>
+                            <td>$645,750</td>
+                        </tr>
+                        <tr>
+                            <td>Olivia Liang</td>
+                            <td>Support Engineer</td>
+                            <td>Singapore</td>
+                            <td>64</td>
+                            <td>2011-02-03</td>
+                            <td>$234,500</td>
+                        </tr>
+                        <tr>
+                            <td>Bruno Nash</td>
+                            <td>Software Engineer</td>
+                            <td>London</td>
+                            <td>38</td>
+                            <td>2011-05-03</td>
+                            <td>$163,500</td>
+                        </tr>
+                        <tr>
+                            <td>Sakura Yamamoto</td>
+                            <td>Support Engineer</td>
+                            <td>Tokyo</td>
+                            <td>37</td>
+                            <td>2009-08-19</td>
+                            <td>$139,575</td>
+                        </tr>
+                        <tr>
+                            <td>Thor Walton</td>
+                            <td>Developer</td>
+                            <td>New York</td>
+                            <td>61</td>
+                            <td>2013-08-11</td>
+                            <td>$98,540</td>
+                        </tr>
+                        <tr>
+                            <td>Finn Camacho</td>
+                            <td>Support Engineer</td>
+                            <td>San Francisco</td>
+                            <td>47</td>
+                            <td>2009-07-07</td>
+                            <td>$87,500</td>
+                        </tr>
+                        <tr>
+                            <td>Serge Baldwin</td>
+                            <td>Data Coordinator</td>
+                            <td>Singapore</td>
+                            <td>64</td>
+                            <td>2012-04-09</td>
+                            <td>$138,575</td>
+                        </tr>
+                        <tr>
+                            <td>Zenaida Frank</td>
+                            <td>Software Engineer</td>
+                            <td>New York</td>
+                            <td>63</td>
+                            <td>2010-01-04</td>
+                            <td>$125,250</td>
+                        </tr>
+                        <tr>
+                            <td>Zorita Serrano</td>
+                            <td>Software Engineer</td>
+                            <td>San Francisco</td>
+                            <td>56</td>
+                            <td>2012-06-01</td>
+                            <td>$115,000</td>
+                        </tr>
+                        <tr>
+                            <td>Jennifer Acosta</td>
+                            <td>Junior Javascript Developer</td>
+                            <td>Edinburgh</td>
+                            <td>43</td>
+                            <td>2013-02-01</td>
+                            <td>$75,650</td>
+                        </tr>
+                        <tr>
+                            <td>Cara Stevens</td>
+                            <td>Sales Assistant</td>
+                            <td>New York</td>
+                            <td>46</td>
+                            <td>2011-12-06</td>
+                            <td>$145,600</td>
+                        </tr>
+                        <tr>
+                            <td>Hermione Butler</td>
+                            <td>Regional Director</td>
+                            <td>London</td>
+                            <td>47</td>
+                            <td>2011-03-21</td>
+                            <td>$356,250</td>
+                        </tr>
+                        <tr>
+                            <td>Lael Greer</td>
+                            <td>Systems Administrator</td>
+                            <td>London</td>
+                            <td>21</td>
+                            <td>2009-02-27</td>
+                            <td>$103,500</td>
+                        </tr>
+                        <tr>
+                            <td>Jonas Alexander</td>
+                            <td>Developer</td>
+                            <td>San Francisco</td>
+                            <td>30</td>
+                            <td>2010-07-14</td>
+                            <td>$86,500</td>
+                        </tr>
+                        <tr>
+                            <td>Shad Decker</td>
+                            <td>Regional Director</td>
+                            <td>Edinburgh</td>
+                            <td>51</td>
+                            <td>2008-11-13</td>
+                            <td>$183,000</td>
+                        </tr>
+                        <tr>
+                            <td>Michael Bruce</td>
+                            <td>Javascript Developer</td>
+                            <td>Singapore</td>
+                            <td>29</td>
+                            <td>2011-06-27</td>
+                            <td>$183,000</td>
+                        </tr>
+                        <tr>
+                            <td>Donna Snider</td>
+                            <td>Customer Support</td>
+                            <td>New York</td>
+                            <td>27</td>
+                            <td>2011-01-25</td>
+                            <td>$112,000</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Age</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                        </tr>
+                    </tfoot>
+                </table>
+                
+                
+            </section>
+
+            
+
+            <section>
+                <!-- Seccion -->
+                <h2 class="h2_turismo text-uppercase">turismo</h2>
+                <article class="article_turismo">
+                    <!-- Texto -->
+
+                    <p class="text-capitalize">
+                        nosotros y nuestros socios almacenamos o accedemos a información en un
+                        dispositivo, tales como cookies, y procesamos datos personales, tales como
+                        identificadores únicos e información estándar enviada por un dispositivo, para
+                        anuncios y contenido personalizados, medición de anuncios y del contenido e
+                        información sobre el público, así como para desarrollar y mejorar productos. Con
+                        su permiso, nosotros y nuestros socios podemos utilizar datos de localización
+                        geográfica precisa e identificación mediante las características de dispositivos.
+                        Puede hacer clic para otorgarnos su consentimiento a nosotros y a nuestros socios
+                        para que llevemos a cabo el procesamiento previamente descrito. De forma
+                        alternativa, puede acceder a información más detallada y cambiar sus preferencias
+                        antes de otorgar o negar su consentimiento. Tenga en cuenta que algún
+                        procesamiento de sus datos personales puede no requerir de su consentimiento,
+                        pero usted tiene el derecho de rechazar tal procesamiento. Sus preferencias se
+                        aplicarán solo a este sitio web. Puede cambiar sus preferencias en cualquier
+                        momento entrando de nuevo en este sitio web o visitando nuestra política de
+                        privacidad.
+                    </p>
+
+                    <p class="text-capitalize">
+                        segundo titulo Nosotros y nuestros socios almacenamos o accedemos a información
+                        en un dispositivo, tales como cookies, y procesamos datos personales, tales como
+                        identificadores únicos e información estándar enviada por un dispositivo, para
+                        anuncios y contenido personalizados, medición de anuncios y del contenido e
+                        información sobre el público, así como para desarrollar y mejorar productos. Con
+                        su permiso, nosotros y nuestros socios podemos utilizar datos de localización
+                        geográfica precisa e identificación mediante las características de dispositivos.
+                        Puede hacer clic para otorgarnos su consentimiento a nosotros y a nuestros socios
+                        para que llevemos a cabo el procesamiento previamente descrito. De forma
+                        alternativa, puede acceder a información más detallada y cambiar sus preferencias
+                        antes de otorgar o negar su consentimiento. Tenga en cuenta que algún
+                        procesamiento de sus datos personales puede no requerir de su consentimiento,
+                        pero usted tiene el derecho de rechazar tal procesamiento. Sus preferencias se
+                        aplicarán solo a este sitio web. Puede cambiar sus preferencias en cualquier
+                        momento entrando de nuevo en este sitio web o visitando nuestra política de
+                        privacidad.
+                    </p>
+                </article>
+            </section>
+
+           
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                  <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="false"
+                      aria-controls="collapseOne"
+                  >MEDELLIN</button>
+              </h2>
+              <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+              >
+                  <div class="accordion-body">
+                      <strong>Medellín</strong>  fue fundada en 1675, cuando ya había ocurrido una 
+                      larga historia en la región antioqueña. Conquistadores procedentes de Ecuador, 
+                      después de fundar Popayán y Cali, se habían aventurado a descubrir el norte del cañón 
+                      del río Cauca. <code>3156520365</code>, https://www.medellin.gov.co/es/secretaria-desarrollo-economico/subsecretaria-de-turismo/
+                  </div>
+              </div>
+          </div>
+ 
+          <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo"
+                        >BOGOTA</button>
+                    </h2>
+                    <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                    >
+                        <div class="accordion-body">
+                            <strong>Bogota</strong> Los españoles nombraron así a la ciudad para recordar
+                            el lugar donde Gonzalo Jiménez de Quesada había nacido, que se llama Santa Fe
+                            de Granada. Cuando la villa llamada Santa Fe de Bacatá fue creciendo y se
+                            convirtió en un poblado, su nombre cambió a Nuestra Señora de la Esperanza,
+                            después del 2000 se llamó Bogotá. <code>3156520365</code>, https://bogota.gov.co/mi-ciudad/turismo
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree"
+                            aria-expanded="false"
+                            aria-controls="collapseThree"
+                        >CALI</button>
+                    </h2>
+                    <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample"
+                    >
+                        <div class="accordion-body">
+                            <strong>Cali</strong> es una ciudad colombiana ubicada en el departamento del
+                            Valle del Cauca, al suroeste de Bogotá. Es conocida por el baile de la salsa,
+                            del que hay muchos clubes en el suburbio de Juanchito. En el barrio más
+                            antiguo de Cali, la catedral neoclásica de San Pedro alberga pinturas de la
+                            Escuela de Quito. Cerca está el Complejo religioso de San Francisco de los
+                            siglos XVIII y XIX. La Capilla La Merced es donde se ofició la primera misa
+                            después de la fundación de Cali en 1536. <code>3156520365</code>,
+                            https://www.cali.gov.co/turismo/
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="https://www.mincit.gov.co/estudios-economicos/estadisticas-e-informes/informes-de-turismo"
+                        >MINTIC</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.colombia.co/turismo/">Colombia.Co</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+          
+
+        <!-- pie de pagina -->
+        <footer>
+            <ul class="footer_lista">
+                <li>
+                    <img src="./img/domicilio.png" alt="domicilio.png" class="icono_lista" />
+                    <a href="https://www.colombia.co/turismo-colombia/5-destinos-diferentes-para-vacacionar-y-viajar-por-colombia/" class="footer_enlace">Viajes</a>
+                </li>
+                <li>
+                    <img src="./img/linea.png" alt="linea.png" class="icono_lista" />
+                    <a href="https://www.mincit.gov.co/estudios-economicos/estadisticas-e-informes/informes-de-turismo" class="footer_enlace">Extranjero</a>
+                </li>
+                <li>
+                    <img src="./img/telefono.png" alt="telefono.png" class="icono_lista" />
+                    <a href="https://web.whatsapp.com/" class="footer_enlace">Whatsapp</a>
+                </li>
+            </ul>
+        </footer>
+
+        <script
+            src="/docs/5.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
